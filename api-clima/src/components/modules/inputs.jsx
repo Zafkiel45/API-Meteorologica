@@ -9,7 +9,7 @@ import '../Styles/App.css';
 function Inputs2({ Setgrauses, setWind, setUmidade, setTempo, setNome, setDescription}) {
 
   const [city, setCity] = useState(null)
-  // const Key = '0b728f0cc3199ee784659854ebe3f898'
+  
 
   async function clima(){
     const URL = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=pt_br&appid=${Key}`)
